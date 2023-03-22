@@ -1,8 +1,12 @@
-const amount = 12
-if(amount<10){
-    console.log('small number');
-}
-else{
-    console.log('large number')
-}
-console.log('hey this  is me aditi!!')
+const path = require('path')
+
+console.log(path.sep)
+
+const  filePath = path.join('/content/','subfolder','text.txt')
+console.log(filePath)
+
+const base = path.basename(filePath)
+console.log(base)
+
+const absolute = path.resolve(__dirname,'content','subfolder','text.txt')
+console.log(absolute)
